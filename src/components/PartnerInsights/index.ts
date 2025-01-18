@@ -1,0 +1,1 @@
+export { PartnerInsights } from "./PartnerInsights";

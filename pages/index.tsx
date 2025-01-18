@@ -1,7 +1,6 @@
 import Head from "next/head";
-import { Container, CssBaseline, Box, Typography } from "@mui/material";
-import { PartnerInsights } from "@/src/components/PartnerInsights/PartnerInsights";
-import { questions } from "@/src/utils/quiz";
+import { CssBaseline } from "@mui/material";
+import { PartnerInsights } from "@/src/components/PartnerInsights";
 
 export default function Home() {
   return (
@@ -13,23 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <CssBaseline />
-      <Box
-        sx={{
-          backgroundColor: "#F4D8CD",
-          minHeight: "100vh",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Container maxWidth="md">
-          <Typography variant="h3" gutterBottom>
-            Gifty
-          </Typography>
-          <PartnerInsights questions={questions} />
-        </Container>
-      </Box>
+      <PartnerInsights />
     </>
   );
 }
